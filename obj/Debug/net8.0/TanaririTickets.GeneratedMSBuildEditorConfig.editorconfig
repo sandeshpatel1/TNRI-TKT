@@ -1,0 +1,83 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TanaririTickets
+build_property.RootNamespace = TanaririTickets
+build_property.ProjectDir = F:\Sandesh\TanaririTickets\TanaririTickets\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = F:\Sandesh\TanaririTickets\TanaririTickets
+build_property._RazorSourceGeneratorDebug = 
+
+[F:/Sandesh/TanaririTickets/TanaririTickets/Views/Booking/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Sandesh/TanaririTickets/TanaririTickets/Views/Booking/Plan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xQbGFuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Sandesh/TanaririTickets/TanaririTickets/Views/Booking/Select.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xTZWxlY3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Sandesh/TanaririTickets/TanaririTickets/Views/Booking/Start.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Sandesh/TanaririTickets/TanaririTickets/Views/Booking/Verify.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xWZXJpZnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Sandesh/TanaririTickets/TanaririTickets/Views/Home/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Sandesh/TanaririTickets/TanaririTickets/Views/Payment/Failed.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxGYWlsZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Sandesh/TanaririTickets/TanaririTickets/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Sandesh/TanaririTickets/TanaririTickets/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Sandesh/TanaririTickets/TanaririTickets/Views/Shared/_Steps.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TdGVwcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Sandesh/TanaririTickets/TanaririTickets/Views/Shared/_ValidationScripts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Sandesh/TanaririTickets/TanaririTickets/Views/Ticket/Find.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0XEZpbmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Sandesh/TanaririTickets/TanaririTickets/Views/Ticket/FindVerify.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0XEZpbmRWZXJpZnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Sandesh/TanaririTickets/TanaririTickets/Views/Ticket/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0XFNob3cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Sandesh/TanaririTickets/TanaririTickets/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Sandesh/TanaririTickets/TanaririTickets/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

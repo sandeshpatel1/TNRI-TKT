@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\wwwroot\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\images\\favicon.png"
+    },
+    {
+      "Id": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\wwwroot\\images\\tanariri-logo-sm.png",
+      "PackagePath": "staticwebassets\\images\\tanariri-logo-sm.png"
+    },
+    {
+      "Id": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\wwwroot\\images\\tanariri-logo.png",
+      "PackagePath": "staticwebassets\\images\\tanariri-logo.png"
+    },
+    {
+      "Id": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TanaririTickets.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.TanaririTickets.props",
+      "PackagePath": "build\\TanaririTickets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.TanaririTickets.props",
+      "PackagePath": "buildMultiTargeting\\TanaririTickets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.TanaririTickets.props",
+      "PackagePath": "buildTransitive\\TanaririTickets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

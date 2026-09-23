@@ -1,0 +1,244 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|f:\\sandesh\\tanariritickets\\tanariritickets\\controllers\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|solutionrelative:controllers\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|f:\\sandesh\\tanariritickets\\tanariritickets\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|solutionrelative:controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|f:\\sandesh\\tanariritickets\\tanariritickets\\services\\otphelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|solutionrelative:services\\otphelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|f:\\sandesh\\tanariritickets\\tanariritickets\\models\\options.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|solutionrelative:models\\options.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|f:\\sandesh\\tanariritickets\\tanariritickets\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|f:\\sandesh\\tanariritickets\\tanariritickets\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|f:\\sandesh\\tanariritickets\\tanariritickets\\database\\schema.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|solutionrelative:database\\schema.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|f:\\sandesh\\tanariritickets\\tanariritickets\\models\\viewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|solutionrelative:models\\viewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|f:\\sandesh\\tanariritickets\\tanariritickets\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|solutionrelative:models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|f:\\sandesh\\tanariritickets\\tanariritickets\\services\\clock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|solutionrelative:services\\clock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|f:\\sandesh\\tanariritickets\\tanariritickets\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|solutionrelative:services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|f:\\sandesh\\tanariritickets\\tanariritickets\\services\\smsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|solutionrelative:services\\smsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|f:\\sandesh\\tanariritickets\\tanariritickets\\views\\booking\\verify.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|solutionrelative:views\\booking\\verify.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|f:\\sandesh\\tanariritickets\\tanariritickets\\database\\schema.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{83C0A188-EC53-4801-96B3-B8FDBEF18306}|TanaririTickets.csproj|solutionrelative:database\\schema.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TicketController.cs",
+              "DocumentMoniker": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\Controllers\\TicketController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TicketController.cs",
+              "ToolTip": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\Controllers\\TicketController.cs*",
+              "RelativeToolTip": "Controllers\\TicketController.cs*",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAcwF4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T07:16:33.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookingController.cs",
+              "ToolTip": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\Controllers\\BookingController.cs*",
+              "RelativeToolTip": "Controllers\\BookingController.cs*",
+              "ViewState": "AgIAAN4AAAAAAAAAAAAcwPQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T07:16:10.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Options.cs",
+              "DocumentMoniker": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\Models\\Options.cs",
+              "RelativeDocumentMoniker": "Models\\Options.cs",
+              "ToolTip": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\Models\\Options.cs*",
+              "RelativeToolTip": "Models\\Options.cs*",
+              "ViewState": "AgIAADcAAAAAAAAAAAAwwEEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T06:53:05.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T06:54:24.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "schema.sql ",
+              "DocumentMoniker": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\Database\\schema.sql",
+              "RelativeDocumentMoniker": "Database\\schema.sql",
+              "ToolTip": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\Database\\schema.sql",
+              "RelativeToolTip": "Database\\schema.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-09-23T06:53:19.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ViewModels.cs",
+              "DocumentMoniker": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\Models\\ViewModels.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels.cs",
+              "ToolTip": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\Models\\ViewModels.cs",
+              "RelativeToolTip": "Models\\ViewModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T06:53:10.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "Models\\Booking.cs",
+              "ToolTip": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\Models\\Booking.cs",
+              "RelativeToolTip": "Models\\Booking.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAA0wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T06:53:02.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Clock.cs",
+              "DocumentMoniker": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\Services\\Clock.cs",
+              "RelativeDocumentMoniker": "Services\\Clock.cs",
+              "ToolTip": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\Services\\Clock.cs",
+              "RelativeToolTip": "Services\\Clock.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T06:52:59.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OtpHelper.cs",
+              "DocumentMoniker": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\Services\\OtpHelper.cs",
+              "RelativeDocumentMoniker": "Services\\OtpHelper.cs",
+              "ToolTip": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\Services\\OtpHelper.cs*",
+              "RelativeToolTip": "Services\\OtpHelper.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T06:40:01.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\Services\\PaymentService.cs",
+              "RelativeDocumentMoniker": "Services\\PaymentService.cs",
+              "ToolTip": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\Services\\PaymentService.cs",
+              "RelativeToolTip": "Services\\PaymentService.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T06:39:33.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SmsService.cs",
+              "DocumentMoniker": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\Services\\SmsService.cs",
+              "RelativeDocumentMoniker": "Services\\SmsService.cs",
+              "ToolTip": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\Services\\SmsService.cs",
+              "RelativeToolTip": "Services\\SmsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T06:39:02.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Verify.cshtml",
+              "DocumentMoniker": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\Views\\Booking\\Verify.cshtml",
+              "RelativeDocumentMoniker": "Views\\Booking\\Verify.cshtml",
+              "ToolTip": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\Views\\Booking\\Verify.cshtml",
+              "RelativeToolTip": "Views\\Booking\\Verify.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-23T06:38:44.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "F:\\Sandesh\\TanaririTickets\\TanaririTickets\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAUAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-22T09:39:39.164Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+@model TicketVm
+@inject Microsoft.Extensions.Options.IOptions<MuseumOptions> Museum
+@{
+    ViewData["Title"] = "Your ticket";
+    var b = Model.Booking;
+    var m = Museum.Value;
+}
+<section class="ticket-page">
+    <div class="ok-head no-print">
+        <div class="badge good">✓</div>
+        <div><p class="kicker good">Booking confirmed</p><h1>Payment <em>successful</em></h1>
+        <p class="muted">Show the QR code below at the museum entrance.</p></div>
+    </div>
+
+    <article class="ticket">
+        <div class="ticket-top">
+            <img src="~/images/tanariri-logo-sm.png" alt="@m.Name" />
+            <div class="ticket-qr"><img src="@Model.QrDataUri" alt="Ticket QR code" /><small>@b.Pnr</small></div>
+        </div>
+        <dl class="ticket-grid">
+            <div><dt>Visitor</dt><dd>@b.VisitorName</dd></div>
+            <div><dt>Visit date</dt><dd>@b.VisitDate?.ToString("dd MMM yyyy")</dd></div>
+            <div><dt>Entry slot</dt><dd>@b.SlotTime</dd></div>
+            <div><dt>Booking ID</dt><dd>@b.Pnr</dd></div>
+            <div><dt>Visitors</dt><dd>@b.TotalGuests</dd></div>
+            <div><dt>Amount paid</dt><dd>₹@((b.PaidAmount ?? b.TotalAmount).ToString("0.##"))</dd></div>
+        </dl>
+        <ul class="ticket-lines">
+            @foreach (var l in Model.Lines) { <li><span>@l.CategoryName &times; @l.Quantity</span><span>@(l.Amount == 0 ? "Free" : "₹" + l.Amount.ToString("0.##"))</span></li> }
+        </ul>
+        <p class="ticket-foot">@m.Name &middot; @m.Address &middot; @m.Phone</p>
+    </article>
+
+    <div class="actions no-print">
+        <button class="btn" type="button" onclick="window.print()">Download / Print ticket</button>
+        <a class="btn ghost" href="@m.HomeUrl">Return to home</a>
+    </div>
+</section>

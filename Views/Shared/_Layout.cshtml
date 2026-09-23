@@ -1,0 +1,50 @@
+@using Microsoft.Extensions.Options
+@inject IOptions<MuseumOptions> Museum
+@inject IOptions<BookingOptions> Booking
+@{
+    var m = Museum.Value;
+    var showTimer = ViewData["Step"] != null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@(ViewData["Title"] ?? "Book Tickets") - @m.Name</title>
+    <link rel="icon" href="~/images/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600;700&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="bg"></div>
+
+    <header class="hdr">
+        <a href="/" class="brand" aria-label="@m.Name">
+            <img src="~/images/tanariri-logo-sm.png" alt="@m.Name" />
+        </a>
+        <a class="hdr-link" asp-controller="Ticket" asp-action="Find">Fetch my ticket</a>
+    </header>
+
+    @if (showTimer)
+    {
+        <div class="pill" id="pill" data-seconds="@(Booking.Value.SessionMinutes * 60)">
+            <span class="dot"></span>Session: <b id="pillNum">--:--</b>
+        </div>
+    }
+
+    <main class="page">
+        @RenderBody()
+    </main>
+
+    <footer class="ftr">
+        <span>&copy; @DateTime.Now.Year @m.Name. All rights reserved.</span>
+        <span class="ftr-links"><a href="@m.PrivacyUrl" target="_blank" rel="noopener">Privacy Policy</a><a href="@m.TermsUrl" target="_blank" rel="noopener">Terms &amp; Conditions</a></span>
+        <span>@m.Address &middot; @m.Email &middot; @m.Phone</span>
+    </footer>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

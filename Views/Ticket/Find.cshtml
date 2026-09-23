@@ -1,0 +1,17 @@
+@model FindVm
+@{ ViewData["Title"] = "Fetch my ticket"; }
+<section class="card narrow">
+    <p class="kicker">Already booked?</p>
+    <h2>Fetch your ticket</h2>
+    <p class="muted">Enter the mobile number and email you used while booking.</p>
+    <div class="err" asp-validation-summary="ModelOnly"></div>
+    <form method="post" novalidate>
+        @Html.AntiForgeryToken()
+        <div class="field"><label for="Mobile">Mobile number</label>
+            <div class="prefix-input"><span>+91</span><input asp-for="Mobile" inputmode="numeric" maxlength="10" /></div>
+            <span class="err" asp-validation-for="Mobile"></span></div>
+        <div class="field"><label for="Email">Email address</label><input asp-for="Email" type="email" /><span class="err" asp-validation-for="Email"></span></div>
+        <button class="btn block" type="submit">Send OTP &rarr;</button>
+    </form>
+    <div class="row-links"><a href="/">Book a new visit</a></div>
+</section>

@@ -1,0 +1,11 @@
+@{
+    var cur = (int)(ViewData["Step"] ?? 1);
+    var labels = new[] { "Verify", "Details", "Plan Visit", "Tickets", "Payment" };
+}
+<ol class="steps">
+    @for (var i = 0; i < labels.Length; i++)
+    {
+        var n = i + 1;
+        <li class="@(n < cur ? "done" : n == cur ? "active" : "")"><span class="num">@(n < cur ? "✓" : n.ToString())</span><span class="lbl">@labels[i]</span></li>
+    }
+</ol>

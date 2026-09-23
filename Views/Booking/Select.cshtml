@@ -1,0 +1,55 @@
+@model SelectVm
+@{ ViewData["Title"] = "Select tickets"; var other = Model.Audience == "Indian" ? "Foreigner" : "Indian"; }
+
+<partial name="_Steps" />
+<div class="tickets-layout">
+    <section class="card wide">
+        <p class="kicker">Step 4 of 5</p>
+        <h2>Select your tickets</h2>
+
+        <div class="tabs">
+            <a class="@(Model.Audience == "Indian" ? "on" : "")" asp-action="Select" asp-route-audience="Indian">Indian</a>
+            <a class="@(Model.Audience == "Foreigner" ? "on" : "")" asp-action="Select" asp-route-audience="Foreigner">Foreigners</a>
+        </div>
+
+        <div class="chips">
+            <span><small>Date</small>@Model.VisitDate</span>
+            <span><small>Slot</small>@Model.Slot</span>
+            <span><small>Seats left</small><b id="left" data-left="@Model.SlotLeft">@Model.SlotLeft</b></span>
+            <a class="linkbtn" asp-action="Plan">Change</a>
+        </div>
+
+        @if (TempData["Error"] is string e) { <div class="err box">@e</div> }
+        <div class="note">A maximum of <b>@Model.SlotLeft</b> ticket(s) can be booked for this slot across all categories.</div>
+
+        <form method="post" id="ticketForm">
+        @Html.AntiForgeryToken()
+            <input type="hidden" name="audience" value="@Model.Audience" />
+            @foreach (var c in Model.Categories)
+            {
+                <div class="tk" data-price="@c.Price.ToString(System.Globalization.CultureInfo.InvariantCulture)" data-name="@c.Name">
+                    <div class="tk-info">
+                        <div class="tk-name">@c.Name</div>
+                        <div class="tk-price">@(c.Price == 0 ? "Free entry" : "₹" + c.Price.ToString("0.##") + " / person")</div>
+                    </div>
+                    <div class="stepper">
+                        <button type="button" class="minus" aria-label="Decrease">&minus;</button>
+                        <input type="text" name="qty[@c.Code]" value="0" readonly aria-label="@c.Name quantity" />
+                        <button type="button" class="plus" aria-label="Increase">+</button>
+                    </div>
+                </div>
+            }
+            @if (!string.IsNullOrWhiteSpace(Model.Note)) { <p class="muted small">@Model.Note</p> }
+        </form>
+    </section>
+
+    <aside class="card summary-card">
+        <p class="kicker">Order summary</p>
+        <div id="lines" class="lines"><em class="muted">No tickets selected yet</em></div>
+        <div class="total"><span>Total visitors <b id="sumPeople">0</b></span><span class="amt">₹<b id="sumTotal">0</b></span></div>
+        <button class="btn block" type="submit" form="ticketForm" id="payBtn" disabled>Proceed to payment &rarr;</button>
+        <p class="muted small center">Secured &amp; encrypted payment</p>
+    </aside>
+</div>
+
+@section Scripts { <script>initTickets();</script> }

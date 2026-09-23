@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "TanaririTickets": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:2802;http://localhost:2803"
+    }
+  }
+}

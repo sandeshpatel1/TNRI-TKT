@@ -1,0 +1,35 @@
+@model MobileVm
+@inject Microsoft.Extensions.Options.IOptions<MuseumOptions> Museum
+@{ ViewData["Title"] = "Verify mobile"; var m = Museum.Value; }
+
+<partial name="_Steps" />
+<div class="split">
+    <section class="intro">
+        <p class="kicker">Book your visit</p>
+        <h1>Welcome to<br /><em>@m.Name</em></h1>
+        <p class="muted">Enter your mobile number to receive a one-time password. Your booking is only a few steps away.</p>
+        <ul class="facts">
+            <li><b>Hours</b>@m.Hours</li>
+            <li><b>Location</b>@m.Address</li>
+            <li><b>Helpline</b>@m.Phone</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <p class="kicker">Step 1 of 5</p>
+        <h2>Verify your mobile</h2>
+        <form method="post" novalidate>
+        @Html.AntiForgeryToken()
+            <div class="field">
+                <label for="Mobile">Mobile number</label>
+                <div class="prefix-input"><span>+91</span>
+                    <input asp-for="Mobile" inputmode="numeric" maxlength="10" autocomplete="tel" placeholder="10-digit number" autofocus />
+                </div>
+                <span class="err" asp-validation-for="Mobile"></span>
+            </div>
+            <button class="btn block" type="submit">Get OTP &rarr;</button>
+        </form>
+        <div class="or"><span>or</span></div>
+        <a class="btn ghost block" asp-controller="Ticket" asp-action="Find">Fetch my ticket</a>
+    </section>
+</div>

@@ -1,0 +1,34 @@
+@model PlanVm
+@{ ViewData["Title"] = "Plan your visit"; }
+
+<partial name="_Steps" />
+<section class="card wide">
+    <p class="kicker">Step 3 of 5</p>
+    <h2>Choose date &amp; entry slot</h2>
+    @if (TempData["Error"] is string e) { <div class="err box">@e</div> }
+
+    <form method="post" id="planForm" novalidate>
+        @Html.AntiForgeryToken()
+        <input type="hidden" name="Slot" id="slotInput" />
+        <div class="field">
+            <label for="dateInput">Visit date</label>
+            <input type="date" name="Date" id="dateInput" min="@Model.Today" max="@Model.MaxDate" value="@Model.Date" />
+        </div>
+
+        <div id="slotMsg" class="muted">Select a date to see available time slots.</div>
+        <div id="slotGrid" class="slots" aria-live="polite"></div>
+
+        <div class="legend">
+            <span><i class="lg ok"></i>Available</span><span><i class="lg low"></i>Few left</span><span><i class="lg out"></i>Full / unavailable</span>
+        </div>
+
+        <div class="summary" id="planSummary" hidden>
+            <div><small>Selected</small><b id="sumText"></b></div>
+            <button class="btn" type="submit">Confirm &amp; continue &rarr;</button>
+        </div>
+    </form>
+</section>
+
+@section Scripts {
+    <script>initPlan('@Url.Action("Slots", "Booking")');</script>
+}

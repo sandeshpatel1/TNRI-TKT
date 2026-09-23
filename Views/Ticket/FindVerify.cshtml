@@ -1,0 +1,14 @@
+@model OtpVm
+@{ ViewData["Title"] = "Verify"; }
+<section class="card narrow">
+    <p class="kicker">Ticket retrieval</p>
+    <h2>Enter verification code</h2>
+    <p class="muted">A 4-digit code was sent to <b>+91 @Model.MaskedMobile</b>.</p>
+    <div class="err" asp-validation-summary="ModelOnly"></div>
+    <form method="post" novalidate>
+        @Html.AntiForgeryToken()
+        <div class="field"><input asp-for="Otp" class="otp-single" inputmode="numeric" maxlength="4" autocomplete="one-time-code" placeholder="&bull; &bull; &bull; &bull;" autofocus /><span class="err" asp-validation-for="Otp"></span></div>
+        <button class="btn block" type="submit">Verify &amp; fetch ticket &rarr;</button>
+    </form>
+    <div class="row-links"><a asp-action="Find">Start over</a></div>
+</section>

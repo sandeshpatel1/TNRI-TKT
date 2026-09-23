@@ -1,0 +1,27 @@
+@model OtpVm
+@{ ViewData["Title"] = "Enter OTP"; }
+
+<partial name="_Steps" />
+<section class="card narrow">
+    <p class="kicker">Step 1 of 5</p>
+    <h2>Enter verification code</h2>
+    <p class="muted">A 4-digit code was sent to <b>+91 @Model.MaskedMobile</b>.</p>
+
+    @if (TempData["Msg"] is string msg) { <div class="note">@msg</div> }
+    <div class="err" asp-validation-summary="ModelOnly"></div>
+
+    <form method="post" novalidate>
+        @Html.AntiForgeryToken()
+        <div class="field">
+            <input asp-for="Otp" class="otp-single" inputmode="numeric" maxlength="4" autocomplete="one-time-code" placeholder="&bull; &bull; &bull; &bull;" autofocus />
+            <span class="err" asp-validation-for="Otp"></span>
+        </div>
+        <button class="btn block" type="submit">Verify &amp; continue &rarr;</button>
+    </form>
+
+    <div class="row-links">
+        <form method="post" asp-action="Resend" class="inline">
+        @Html.AntiForgeryToken()<button class="linkbtn" type="submit">Resend code</button></form>
+        <a href="/">Change number</a>
+    </div>
+</section>

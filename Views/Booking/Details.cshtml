@@ -1,0 +1,36 @@
+@model DetailsVm
+@inject Microsoft.Extensions.Options.IOptions<MuseumOptions> Museum
+@{
+    ViewData["Title"] = "Your details";
+    var states = new[] { "Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Chhattisgarh","Goa","Gujarat","Haryana","Himachal Pradesh","Jharkhand","Karnataka","Kerala","Madhya Pradesh","Maharashtra","Manipur","Meghalaya","Mizoram","Nagaland","Odisha","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Tripura","Uttar Pradesh","Uttarakhand","West Bengal","Delhi","Jammu and Kashmir","Ladakh","Chandigarh","Puducherry","Andaman and Nicobar Islands","Dadra and Nagar Haveli and Daman and Diu","Lakshadweep" };
+}
+
+<partial name="_Steps" />
+<section class="card narrow wide">
+    <p class="kicker">Step 2 of 5</p>
+    <h2>Your details</h2>
+    <p class="muted">Please enter the details as they appear on your ID. Your ticket will be emailed to you.</p>
+    <div class="err" asp-validation-summary="ModelOnly"></div>
+
+    <form method="post" novalidate>
+        @Html.AntiForgeryToken()
+        <div class="field"><label for="Name">Full name</label><input asp-for="Name" autocomplete="name" style="text-transform:uppercase" /><span class="err" asp-validation-for="Name"></span></div>
+        <div class="field"><label for="Email">Email address</label><input asp-for="Email" type="email" autocomplete="email" /><span class="err" asp-validation-for="Email"></span></div>
+        <div class="grid2">
+            <div class="field"><label for="City">City</label><input asp-for="City" autocomplete="address-level2" style="text-transform:uppercase" /><span class="err" asp-validation-for="City"></span></div>
+            <div class="field"><label for="State">State</label>
+                <select asp-for="State">
+                    <option value="">Select state</option>
+                    @foreach (var s in states) { <option value="@s" selected="@(s.Equals(Model.State, StringComparison.OrdinalIgnoreCase))">@s</option> }
+                </select>
+                <span class="err" asp-validation-for="State"></span></div>
+        </div>
+        <div class="field"><label for="Country">Country</label><input asp-for="Country" autocomplete="country-name" /><span class="err" asp-validation-for="Country"></span></div>
+
+        <label class="check"><input asp-for="Accept" type="checkbox" value="true" />
+            <span>I accept the <a href="@Museum.Value.TermsUrl" target="_blank" rel="noopener">terms &amp; conditions</a> and the <a href="@Museum.Value.PrivacyUrl" target="_blank" rel="noopener">privacy policy</a>.</span></label>
+        <span class="err" asp-validation-for="Accept"></span>
+
+        <button class="btn block" type="submit">Continue &rarr;</button>
+    </form>
+</section>
